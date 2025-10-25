@@ -45,6 +45,9 @@ yarn-error.log*
 **/github-mcp-config.json
 **/github-mcp-config-full.json
 
+# Login script containing sensitive information
+**/login.sh
+
 # Include config templates (without actual tokens)
 !**/github-mcp-config-template.json
 !**/github-mcp-config-full-template.json
