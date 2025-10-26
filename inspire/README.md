@@ -44,7 +44,7 @@ export INSPIRE_PASSWORD='你的密码'
 
 # 使用默认值的简单命令 (需要先设置环境变量或使用脚本中的默认值)
 ```bash
-python create_distributed_training_task.py create \
+python inspire_api_control.py create \
   --name 'hzz-api-training-test' \
   --start-command 'cd util-scripts && python video_check.py'
 ```
@@ -59,26 +59,26 @@ python create_distributed_training_task.py create \
 
 #### 查询任务详情
 ```bash
-python create_distributed_training_task.py detail \
+python inspire_api_control.py detail \
   --job-id 'job-3d35234d-e716-4872-9ce9-ce00222342d0'
 ```
 
 #### 停止训练任务
 ```bash
-python create_distributed_training_task.py stop \
+python inspire_api_control.py stop \
   --job-id 'job-abc123'
 ```
 
 #### 列出集群节点
 ```bash
-python create_distributed_training_task.py list-nodes \
+python inspire_api_control.py list-nodes \
   --size 20
 ```
 
 ### Python API 使用
 
 ```python
-from create_distributed_training_task import InspireAPI
+from inspire_api_control import InspireAPI
 
 # 创建API客户端
 api = InspireAPI()
