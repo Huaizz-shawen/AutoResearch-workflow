@@ -588,7 +588,7 @@ def main():
                               default="docker.sii.shaipower.online/inspire-studio/ngc-cuda12.4-base:1.0", 
                               help='镜像名称')
     create_parser.add_argument('--instances', type=int, default=1, help='实例数量 (默认: 1)')
-    create_parser.add_argument('--shm-size', type=int, default=1, help='共享内存大小(Gi) (默认: 1)')
+    create_parser.add_argument('--shm-size', type=int, default=40, help='共享内存大小(Gi) (默认: 40)')
     create_parser.add_argument('--max-time', type=str, default="3600000", 
                               help='最大运行时间(毫秒) (默认: 3600000)')
     create_parser.add_argument('--auto-fault-tolerance', action='store_true', help='开启自动容错')
