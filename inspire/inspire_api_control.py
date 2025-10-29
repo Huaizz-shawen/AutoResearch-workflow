@@ -87,7 +87,7 @@ class InspireAPI:
     DEFAULT_INSTANCE_COUNT = 1
     DEFAULT_SHM_SIZE = 1
     DEFAULT_MAX_RUNNING_TIME = "3600000"  # 1小时
-    DEFAULT_IMAGE_TYPE = "SOURCE_OFFICIAL"
+    DEFAULT_IMAGE_TYPE = "SOURCE_PRIVATE"
     
     def __init__(self, config: Optional[InspireConfig] = None):
         """
@@ -302,7 +302,7 @@ class InspireAPI:
             enable_notification: 是否启用通知 (默认: False)
             enable_troubleshoot: 是否启用故障排除 (默认: False)
             image: 镜像名称
-            image_type: 镜像类型 (默认: SOURCE_OFFICIAL)
+            image_type: 镜像类型 (默认: SOURCE_PRIVATE)
             instance_count: 实例数量 (默认: 1)
             shm_gi: 共享内存大小 (默认: 1)
             max_running_time_ms: 最大运行时间(毫秒) (默认: 3600000 = 1小时)
