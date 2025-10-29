@@ -49,14 +49,17 @@ python inspire_api_control.py create \
   --start-command 'cd util-scripts && python video_check.py'
 ```
 
-# 启智平台中的计算资源（如CPU、GPU、内存等）只能以一些固定的组合形式选定
+# 启智平台中的计算资源只能以固定组合形式选定
 不支持自定义，可以通过表格查看可用规格及spec_id/compute-group-id：
 目前经验：不同节点 不同计算类型组 相同资源组合id相同（H100和H200的quota id相同）
+
+
 | 配置类型 | CPU核数 | 内存 | GPU配置 | quota-ID |
 |---------|---------|------|---------|----------|
 | 单个节点 | 15核 | 200GB | 1 × NVIDIA H200 (141GB) | 4dd0e854-e2a4-4253-95e6-64c13f0b5117 |
 | 单个节点 | 60核 | 800GB | 4 × NVIDIA H200 (141GB) | 45ab2351-fc8a-4d50-a30b-b39a5306c906 |
 | 单个节点 | 120核 | 1600GB | 8 × NVIDIA H200 (141GB) | b618f5cb-c119-4422-937e-f39131853076 |
+
 
 
 | 计算类型组 | compute-group-id |
